@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900;1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #DBEDB1;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DBEDB1;
+}
+
+.body-container{
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #F1E6E4;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px -3px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -3px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -3px 22px 0px rgba(50, 50, 50, 0.75);
+}
+
+.left-container {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.left-container h1 {
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 20px;
+}
+
+.left-container img {
+    width: 100%;
+    height: 90%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #BFE9FF;
+    border-radius: 10px;
+    box-shadow: 0px -3px 22px 0px rgba(50, 50, 50, 0.75);
+    padding: 15px;
+}
+
+.img-user {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.img-user img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box h1 {
+    text-transform: uppercase;
+    color: #273339;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    width: 85%;
+    text-align: left;
+    float: left;
+    font-size: 25px;
+    color: #273339;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.login-box h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #273339;
+}
+
+.login-box h4 {
+    width: 85%;
+    float: left;
+    word-wrap: break-word;
+    font-size: 10px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #273339;
+}
+
+.login-box input {
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.login-box a {
+    font-size: 12px;
+}
+
+.login-box button {
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #273339;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: gray;
+}
+
+.social-media {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.social-media img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bubble {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid #483D8B;
+    background: #273339;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bubble:hover {
+    background: gray;
+}
