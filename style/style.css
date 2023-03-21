@@ -238,19 +238,23 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    width: 100%;
 }
 
-.social-media img {
+.social-media a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 20%;
     padding-right: 15px;
     transition: 0.3;
 }
 
-.social-media img:hover {
+.social-media a:hover {
     opacity: 0.5;
+}
+
+.social-media a i {
+    width: 00%;
 }
 
 .check label {
