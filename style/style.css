@@ -12,7 +12,8 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: #DBEDB1;
+    background: rgb(2,0,36);
+    background: linear-gradient(301deg, rgba(2,0,36,1) 0%, rgba(121,9,49,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 .container{
@@ -21,7 +22,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #DBEDB1;
+    background: rgb(2,0,36);
+    background: linear-gradient(301deg, rgba(2,0,36,1) 0%, rgba(121,9,49,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 .body-container{
@@ -31,7 +33,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
-    background: #F1E6E4;
+    /* From https://css.glass */
+    background: rgba(255, 251, 251, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 251, 251, 0.47);
     border-radius: 10px;
     -webkit-box-shadow: 0px -3px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px -3px 22px 0px rgba(50, 50, 50, 0.75);
@@ -88,10 +96,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #BFE9FF;
     border-radius: 10px;
-    box-shadow: 0px -3px 22px 0px rgba(50, 50, 50, 0.75);
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .img-user {
@@ -115,7 +122,7 @@ body {
 
 .login-box h1 {
     text-transform: uppercase;
-    color: #273339;
+    color: #fcfcfc;
     margin-bottom: 20px;
 }
 
@@ -124,7 +131,7 @@ body {
     text-align: left;
     float: left;
     font-size: 25px;
-    color: #273339;
+    color: #fcfcfc;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -133,7 +140,7 @@ body {
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #273339;
+    color: #fcfcfc;
 }
 
 .login-box h4 {
@@ -145,19 +152,23 @@ body {
     margin-top: 15px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #273339;
+    color: #fcfcfc;
 }
 
 .login-box input {
     width: 80%;
     outline: none;
     border: none;
-    border-radius: 5px;
     padding: 15px;
+    background:none;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 .login-box a {
     font-size: 12px;
+    text-decoration: none;
+    color: #e0deded5;
 }
 
 .login-box button {
@@ -166,16 +177,60 @@ body {
     outline: none;
     text-transform: uppercase;
     font-size: 12px;
-    background: #273339;
-    color: #f3f3f3;
+    background: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.login-box button:hover {
-    background: gray;
-}
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
 
 .social-media {
     cursor: pointer;
@@ -189,6 +244,17 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 20%;
+    padding-right: 15px;
+    transition: 0.3;
+}
+
+.social-media img:hover {
+    opacity: 0.5;
+}
+
+.check label {
+    margin: 15px;
 }
 
 #bubble {
@@ -199,14 +265,13 @@ body {
     right: 15px;
     bottom: 15px;
     border-radius: 50%;
-    border: 1px solid #483D8B;
+    border: 1px solid #e3e3e3;
     background: #273339;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #bubble:hover {
-    background: gray;
+    background: none;
 }
